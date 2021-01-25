@@ -28,6 +28,7 @@ RUN rm Eagle_v2.4.1.tar.gz
 
 RUN curl -sL imputationbot.now.sh | bash
 RUN cp imputationbot /usr/local/bin
+RUN cp imputationbot.jar /usr/local/bin
 
 ENV PATH /opt/conda/envs/Imputation-nf/bin:$PATH
 ENV PATH="$PATH:/Eagle_v2.4.1"
